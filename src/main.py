@@ -11,7 +11,6 @@ from src.services import profitable_cashback
 from src.utils import read_exsel
 from src.views import web_main
 
-
 log_file_path = os.path.join(LOGS_DIR, "utils.log")
 file_logger = logging.getLogger("utils")
 file_handler = logging.FileHandler(log_file_path, encoding="utf-8", mode="w")
@@ -62,13 +61,14 @@ def main():
 
     if re.match(date_pattern_rep, date_report):
         result_report = spending_by_category(transactions, category_user, date_report)
+        json_result = result_report.to_json(orient="records")
     else:
         print("Ошибка: введенная дата должна иметь формат %d.%m.%Y.")
 
     return (
         f"Статистика по дате: {result_info} \n,"
         f"Статистика по категориям, где выгодный кэшбек: {result_cashback}\n,"
-        f"Траты по заданной категории за последние 3 месяца с указанной даты: {result_report}"
+        f"Траты по заданной категории за последние 3 месяца с указанной даты: {json_result}"
     )
 
 

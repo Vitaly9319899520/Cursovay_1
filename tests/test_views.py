@@ -1,6 +1,6 @@
+import json
 import unittest
 from unittest.mock import patch
-import json
 
 from src.views import web_main
 

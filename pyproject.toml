@@ -1,9 +1,9 @@
 [project]
-name = "transaction-analysis"
+name = "PythonProject2"
 version = "0.1.0"
 description = ""
 authors = [
-    {name = "Darya",email = "dasha-439@yandex.ru"}
+    {name = "Vitaliy",email = "9319899520@mail.ru"}
 ]
 readme = "README.md"
 requires-python = ">=3.13"
@@ -11,7 +11,8 @@ dependencies = [
     "pandas (>=2.2.3,<3.0.0)",
     "openpyxl (>=3.1.5,<4.0.0)",
     "requests (>=2.32.3,<3.0.0)",
-    "python-dotenv (>=1.0.1,<2.0.0)"
+    "python-dotenv (>=1.0.1,<2.0.0)",
+    "pytest (>=8.3.5,<9.0.0)"
 ]
 
 
@@ -24,6 +25,10 @@ flake8 = "^7.1.2"
 black = "^25.1.0"
 isort = "^6.0.1"
 mypy = "^1.15.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
 
 [tool.black]
 line-length = 119

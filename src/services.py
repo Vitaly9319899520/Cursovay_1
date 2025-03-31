@@ -4,6 +4,7 @@ import os
 import typing
 
 import pandas as pd
+
 from config import LOGS_DIR
 
 log_file_path = os.path.join(LOGS_DIR, "services.log")

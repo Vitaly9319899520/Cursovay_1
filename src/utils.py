@@ -3,9 +3,9 @@ import json
 import logging
 import os
 import typing
+
 import pandas as pd
 import requests
-
 from dotenv import load_dotenv
 
 from config import LOGS_DIR

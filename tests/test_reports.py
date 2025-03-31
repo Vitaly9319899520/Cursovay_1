@@ -1,9 +1,10 @@
+import datetime
+
+import pandas as pd
+import pytest
 from dateutil.relativedelta import relativedelta
 
 from src.reports import spending_by_category
-import pytest
-import pandas as pd
-import datetime
 
 
 def test_spending_by_category_valid(sample_transactions):

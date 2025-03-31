@@ -1,11 +1,11 @@
+import json
 import logging
 import os
-import json
 import re
 import typing
 
-from config import DATA_DIR, ROOT_DIR, LOGS_DIR
-from src.utils import hello_date, kart_user_info, top_transactions, exchange_rate, stock_prices
+from config import DATA_DIR, LOGS_DIR, ROOT_DIR
+from src.utils import exchange_rate, hello_date, kart_user_info, stock_prices, top_transactions
 
 operations_path = os.path.join(DATA_DIR, "operations.xlsx")
 operations_path_json = os.path.join(ROOT_DIR, "user_settings.json")

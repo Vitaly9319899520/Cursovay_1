@@ -6,7 +6,7 @@
 
 1. Клонируйте проект в свой репозиторий по ссылке:
 ```
-git clone github.com/DashulyaE/transaction_analysis
+git clone git@github.com:Vitaly9319899520/Cursovay_1.git
 ```
 
 ## Реализованы задачи проекта:

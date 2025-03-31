@@ -1,16 +1,16 @@
 import json
+import os
+import tempfile
 import unittest
 from datetime import datetime
 from unittest import mock
-from unittest.mock import patch, MagicMock
+from unittest.mock import MagicMock, patch
 
 import pandas as pd
-import os
-import tempfile
 import pytest
 import requests
 
-from src.utils import read_exsel, read_json, kart_user_info, top_transactions, hello_date, exchange_rate, stock_prices
+from src.utils import exchange_rate, hello_date, kart_user_info, read_exsel, read_json, stock_prices, top_transactions
 
 
 def test_hello_date():
